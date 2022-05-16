@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 0.625rem;
+    font-size: 0.65rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;    
     background-color: #08313A;
@@ -30,6 +30,7 @@ html {
     margin: 3.2rem 0;
 }
 
+
 .carousel {
     width: 100%;   
     overflow: hidden;
@@ -41,6 +42,7 @@ html {
     width: 400%;
     display: flex;
 }
+
 
 .card {
     width: 25%;
@@ -112,7 +114,7 @@ input[name="radio-btn"] {
     border-color: #107869;
 }
 
-/******** CHANGE SLIDES ********/
+/** SLIDES **/
 
 #radio-btn1:checked ~ .carousel__inner .card1 {
     margin-left: 0;
@@ -130,7 +132,7 @@ input[name="radio-btn"] {
     margin-left: -75%;
 }
 
-/******** CHANGE BUTTONS ********/
+/** Switchers **/
 
 #radio-btn1:checked ~ .carousel__nav label[for="radio-btn1"] > *,
 #radio-btn2:checked ~ .carousel__nav label[for="radio-btn2"] > *,
@@ -166,7 +168,7 @@ input[name="radio-btn"] {
     box-shadow: 0 0 1rem #F8D64F;
 }
 
-/******** SHOW IMAGES ********/
+/*** Memes Function ***/
 
 #radio-btn1:checked ~ .carousel__inner .card1 .card__image {
     opacity: 1;
@@ -188,7 +190,7 @@ input[name="radio-btn"] {
     transform: scale(1);
 }
 
-/******** SHOW TEXT ********/
+/*** TEXT ***/
 
 #radio-btn1:checked ~ .carousel__inner .card1 .card__text {
     opacity: 1;
