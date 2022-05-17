@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Mem-Slider</title>
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">CSS Mem Slider</h1>
+        <div class="carousel">
+
+            <input type="radio" name="radio-btn" id="radio-btn1" checked>
+            <input type="radio" name="radio-btn" id="radio-btn2">
+            <input type="radio" name="radio-btn" id="radio-btn3">
+            <input type="radio" name="radio-btn" id="radio-btn4">
+
+            <div class="carousel__inner">
+                <div class="card card1">
+                    <img class="card__image" src="./memes/m1.jpg" alt="Meme1">
+                    <p class="card__text">
+                        Почему стоит встречаться с програмистом,<br>
+                        который понимает в управлении памятью...<br>
+                    </p>
+                </div>
+                <div class="card card2">
+                    <img class="card__image" src="./memes/m2.png" alt="Meme2">
+                    <p class="card__text">
+                        Когда ты написал 10 строк кода без помощи Гугла.<br>
+                        Да, совсем немного, зато честная работа.<br>
+                    </p>
+                </div>
+                <div class="card card3">
+                    <img class="card__image" src="./memes/m3.jpg" alt="Meme3" >
+                    <p class="card__text">
+                        Когда ты студент-программист, <br>
+                        но не понял мема про прграммистов. <br>
+                        
+                    </p>
+                </div>
+                <div class="card card4">
+                    <img class="card__image" src="./memes/m4.jpg" alt="Meme4">
+                    <p class="card__text">
+                        Босс: Дедлайн завтра,<br>
+                        тебе нужно протестировать сегодня свои изменения.<br>
+                        Я: Лучшее, что я могу сделать - добавить ещё багов.
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel__nav">
+                <label for="radio-btn1" class="carousel__navlink"><span></span></label>
+                <label for="radio-btn2" class="carousel__navlink"><span></span></label>
+                <label for="radio-btn3" class="carousel__navlink"><span></span></label>
+                <label for="radio-btn4" class="carousel__navlink"><span></span></label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
