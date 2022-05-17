@@ -8,7 +8,7 @@ html {
     font-size: 0.65rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF;    
-    background-color: #08313A;
+    background-color: #201f20;
 }
 
 .container {
@@ -24,15 +24,16 @@ html {
 }
 
 .title {
-    font-size: 3.2rem;
-    letter-spacing: 0.03em;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    margin: 3.2rem 0;
+    margin: 2rem 0;
+    color:antiquewhite;
 }
 
 
 .carousel {
-    width: 100%;   
+    width: 90%;   
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -57,27 +58,28 @@ html {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    margin: 0 0 3.2rem 0;
+    margin: 0 0 1.5rem 0;
     align-self: center;
     opacity: 0;
-    transform: scale(0);
-    transition: .6s;
-    border-radius: 1.5rem;
+    transform:matrix(0, 1, 1, 2, 8, 8);
+    transition: .5s;
+    border-radius: 2rem;
 }
 
 .card__text {
-    font-size: 1.6rem;
+    font-size: 1.31rem;
     letter-spacing: 0.03em;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
-    width: 60%;
+    width: 100%;
     opacity: 0;
-    transform: translateX(-100%);
-    transition: .6s;
-    transition-delay: .4s;
+    transform: translate3d(40px, -20px, -35px);;
+    transition: .3s;
+    transition-delay: .2s;
 }
 
-input[name="radio-btn"] {
+
+input[name="radio-btn"]  {
     width: 0;
     height: 0;
     visibility: hidden;
@@ -105,16 +107,17 @@ input[name="radio-btn"] {
     height: 2rem;
     border-radius: 100%;
     transition: .3s;
-    background-color: #FFFFFF;
+    background-color: #c7c4c4cd;
     border: 0.2rem solid #FFFFFF;
 }
 
 .carousel__navlink:hover > * {
-    background-color: #107869;
+    background-color: #471f30;
     border-color: #107869;
 }
 
 /** SLIDES **/
+
 
 #radio-btn1:checked ~ .carousel__inner .card1 {
     margin-left: 0;
@@ -168,11 +171,11 @@ input[name="radio-btn"] {
     box-shadow: 0 0 1rem #F8D64F;
 }
 
-/*** Memes Function ***/
+/** Memes Function **/
 
 #radio-btn1:checked ~ .carousel__inner .card1 .card__image {
     opacity: 1;
-    transform: scale(1);
+    transform:scale(1);
 }
 
 #radio-btn2:checked ~ .carousel__inner .card2 .card__image {
