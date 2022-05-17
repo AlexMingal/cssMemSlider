@@ -103,8 +103,8 @@ input[name="radio-btn"]  {
 }
 
 .carousel__navlink > * {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 100%;
     transition: .3s;
     background-color: #c7c4c4cd;
@@ -113,7 +113,7 @@ input[name="radio-btn"]  {
 
 .carousel__navlink:hover > * {
     background-color: #471f30;
-    border-color: #107869;
+    border-color: #c5b781;
 }
 
 /** SLIDES **/
@@ -149,7 +149,7 @@ input[name="radio-btn"]  {
 #radio-btn2:checked ~ .carousel__nav label[for="radio-btn2"]:hover > *,
 #radio-btn3:checked ~ .carousel__nav label[for="radio-btn3"]:hover > *,
 #radio-btn4:checked ~ .carousel__nav label[for="radio-btn4"]:hover > * {
-    border-color: #107869;
+    border-color: #71260d;
     background: transparent;
 }
 
@@ -157,19 +157,21 @@ input[name="radio-btn"]  {
 #radio-btn2:checked ~ .carousel__nav label[for="radio-btn2"]:active > *,
 #radio-btn3:checked ~ .carousel__nav label[for="radio-btn3"]:active > *,
 #radio-btn4:checked ~ .carousel__nav label[for="radio-btn4"]:active > * {
-    border-color: #F8D64F;
+    border-color: #ff004c;
     background: transparent;
-    box-shadow: 0 0 1rem #F8D64F;
+    box-shadow: 0 0 1rem #fb1f1f;
 }
 
 .carousel__nav label[for="radio-btn1"]:active > *,
 .carousel__nav label[for="radio-btn2"]:active > *,
 .carousel__nav label[for="radio-btn3"]:active > *,
 .carousel__nav label[for="radio-btn4"]:active > * {
-    border-color: #F8D64F;
-    background-color: #F8D64F;
-    box-shadow: 0 0 1rem #F8D64F;
+    border-color: #ff3636;
+    background-color: #b81010;
+    box-shadow: 0 0 1rem #770c0c;
 }
+
+
 
 /** Memes Function **/
 
@@ -193,6 +195,7 @@ input[name="radio-btn"]  {
     transform: scale(1);
 }
 
+
 /*** TEXT ***/
 
 #radio-btn1:checked ~ .carousel__inner .card1 .card__text {
@@ -214,6 +217,7 @@ input[name="radio-btn"]  {
     opacity: 1;
     transform: translateX(0);
 }
+
 
 @media (max-width: 767px) {
 
@@ -249,7 +253,7 @@ input[name="radio-btn"]  {
     }
 }
 
-@media (max-width: 463px) {
+@media (max-width: 462px) {
 
     .title {
         font-size: 2.8rem;
